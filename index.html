@@ -1,67 +1,95 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta cahrset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP|Sawarabi+Mincho&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<script src="https://kit.fontawesome.com/eeedbbf6a5.js" crossorigin="anonymous"></script>
-<title>Kaito Ishimoda's portfolio</title>
-</head>
-<body>
+@charset "utf-8";
+html {
+    font-family: 'Noto Serif JP', serif;
+}
+body {
+    margin: 0;
+    width: 100%;
+    background: url(images/bg2.jpg) no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/*=========================
+    Header
+=========================*/
+header {
+    position: relative;
+    height: 70px;
+    max-width: 800px;
+    margin: auto;
+    color: rgba(255,255,255,1);
+}
+header nav {
+    width: 100%;
+    max-width: 800px;
+    position: fixed;
+    z-index: 999;
+}
+header nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+header nav li {
+    list-style: none;
+    flex: 1 0 auto;
+    text-align: center;
+    background: rgba(255, 0, 0, 0);
+    border-bottom: 3px solid #006400;
+}
+header nav li:hover {
+    opacity: 0.6;
+}
+header nav a {
+    display: inherit;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 0;
+}
 
-<header>
-    <input type="checkbox" id="hamcheck">
-    <nav>
-        <label id="hambutton" for="hamcheck">
-            <i class="fas fa-bars"></i>
-        </label>
-        <ul>
-            <li><a href="#profile">profile</a></li>
-            <li><a href="#licence">Skill&Licence</a></li>
-            <li><a href="#">Works</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <h1>Kaito Ishimoda's portfolio</h1>
-</header>
-<main>
-    <section id="prof">
-        <h2><i class="fas fa-child"></i></i></i>Profile/自己紹介</h2>
-        <img src="images/prof.png" id="prof_image"> 
-        <dl>
-            <h3>名前</h3>
-            <dd><ruby><rb>石母田</rb><rt>いしもだ</rt></ruby> <ruby><rb>海斗</rb><rt>かいと</rt></ruby></dd>
-            <h3>出身</h3>
-            <dd>岩手県　金ヶ崎町</dd>
-            <h3>生年月日</h3><dd>1997年11月5日</dd>
-            <h3>趣味</h3><dd>ゲーム&nbsp;/&nbsp;ソフトボール</dd>
-            <h3>好きな映画</h3><dd>バトルロワイヤル</dd>
-            </dl>
-    </section>
-    <section id="licence">
-        <h2><i class="fas fa-child"></i>Licence&nbsp;&&nbspSkill/資格・技能</h2>
-        <h3>所有資格</h3>
-        <ul class="licence_list">
-            <li>普通自動車運転免許</li>
-            <li>原付運転免許</li>
-            <li>WEBクリエイター試験スタンダード</li>
-            <li>MOS認定試験</li>
-        </ul>
+/*=========================
+    Main
+=========================*/
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 1rem;
+    box-sizing: border-box;
+    color: rgba(255,255,255,1);
+    background: rgba(0, 0, 0, 0.404);
+}
+main section {
+    background: rgba(203, 199, 207, 0.2);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+main section h2 {
+    margin: 0;
+    size: 50%;
+}
+/*slide*/
 
-        <h3>技能</h3>
-        <ul class="skill_list">
-            <li>html</li>
-            <li>mos</li>
-            <li>php</li>
-            <li>css</li>
-            <li>exel</li>
-            <li>word</li>
-        </ul>
-    </section>
-</main>
-<footer>
-    <small>&copy;Kaito Ishimoda 2019.</small>
-</footer>
-</body>
-</html>
+
+#slide_ul {
+    margin: auto;
+    width: 800px;
+    height: 400px;
+    }
+#slide_ul li {
+    display: block;
+    width: 300px;
+    height: 300px;
+    }
+#slide_ul li img {
+    width:50%;
+}
+/*=========================
+    Footer
+=========================*/
+footer {
+    background: rgba(0,0,0,0.5);
+    color: #ffffff;
+    text-align: center;
+    height: 30px;
+}
