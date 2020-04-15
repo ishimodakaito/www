@@ -1,10 +1,67 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<title>test docment</title>
+<meta cahrset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP|Sawarabi+Mincho&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/eeedbbf6a5.js" crossorigin="anonymous"></script>
+<title>Kaito Ishimoda's portfolio</title>
 </head>
 <body>
 
+<header>
+    <input type="checkbox" id="hamcheck">
+    <nav>
+        <label id="hambutton" for="hamcheck">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="#profile">profile</a></li>
+            <li><a href="#licence">Skill&Licence</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>Kaito Ishimoda's portfolio</h1>
+</header>
+<main>
+    <section id="prof">
+        <h2><i class="fas fa-child"></i></i></i>Profile/自己紹介</h2>
+        <img src="images/prof.png" id="prof_image"> 
+        <dl>
+            <h3>名前</h3>
+            <dd><ruby><rb>石母田</rb><rt>いしもだ</rt></ruby> <ruby><rb>海斗</rb><rt>かいと</rt></ruby></dd>
+            <h3>出身</h3>
+            <dd>岩手県　金ヶ崎町</dd>
+            <h3>生年月日</h3><dd>1997年11月5日</dd>
+            <h3>趣味</h3><dd>ゲーム&nbsp;/&nbsp;ソフトボール</dd>
+            <h3>好きな映画</h3><dd>バトルロワイヤル</dd>
+            </dl>
+    </section>
+    <section id="licence">
+        <h2><i class="fas fa-child"></i>Licence&nbsp;&&nbspSkill/資格・技能</h2>
+        <h3>所有資格</h3>
+        <ul class="licence_list">
+            <li>普通自動車運転免許</li>
+            <li>原付運転免許</li>
+            <li>WEBクリエイター試験スタンダード</li>
+            <li>MOS認定試験</li>
+        </ul>
+
+        <h3>技能</h3>
+        <ul class="skill_list">
+            <li>html</li>
+            <li>mos</li>
+            <li>php</li>
+            <li>css</li>
+            <li>exel</li>
+            <li>word</li>
+        </ul>
+    </section>
+</main>
+<footer>
+    <small>&copy;Kaito Ishimoda 2019.</small>
+</footer>
 </body>
 </html>
